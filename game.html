@@ -1,0 +1,78 @@
+<!--
+AUTHOR: Sagar Poudek
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Grandpa's Shed </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Importing the custom style-sheet that makes the game look good-->
+  <link rel="stylesheet" href = "game.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Using Bootstrap for Grid and Responsiveness -->
+  <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- Using the Google Font API for awesome fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <!--  Using the FontAwesome library for the symbols -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id = "body">
+  <!-- This area hosts all the activities -->
+  <div id = "gamePlay">
+    <!-- For the countdown -->
+    <div id = "countDown" style = "visibility:hidden;">
+      <p id = "timer">   </p>
+    </div>
+
+    <!-- Main user input form that intiates the game -->
+    <div id = "userForm">
+      <form>
+        <p id= "label"> Grandpa's Shed</p>
+        <hr />
+        <label>Enter the number of items (Max 20) </label>
+        <input type = "number" id = "numberOfItems"/> <br />
+        <label>Enter the time in seconds</label>
+        <input type = "number" id = "time" value="10" /> <br />
+        <label>Enter the items to remove</label>
+        <input type = "number"  id = "itemsToRemove" value = "1"/> <br />
+        <button type = "submit" id = "play" class ="btn btn-primary btn-lg">Play <i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i> </button>
+      </form>
+    </div>
+
+    <div id = "toolList" class = "row">
+
+    </div>
+
+    <!--Division that will later hold the options for users to choose from -->
+    <form id = "options">
+      <p id = "label" style="padding-bottom: 40px;"> Select the items that were removed: </p>
+      <span id = "optionsHere">
+      </span>
+
+      <br />
+      <!-- Starts the Game -->
+      <button type = "submit" class = "btn btn-primary btn-lg" id = "sub" style = "visibility:hidden; margin-top:20px;"> Submit </button>
+    </form>
+
+    <!-- Used to send user the appropriate feedback -->
+    <div id = "scorecard">
+      <p id = "score"> </p>
+    </div>
+
+  </div>
+  <div id = "thanks">
+    <p id = "send_off" class = "row"> </p> <br />
+
+  </div>
+
+  <div id = "selected">
+    <p id = "select" class = "row"> </p> <br />
+  </div>
+</body>
+
+<!-- Using custom script for the functionality of the game -->
+<script src = "game.js"> </script>
+</html>

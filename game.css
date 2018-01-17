@@ -1,0 +1,73 @@
+/*
+CUSTOM STYLESHEET
+AUTHOR: Sagar Poudel
+*/
+
+#body{
+  background-color: #00BCD4;
+  margin-left: 15px;
+}
+
+/* To distinguish the form from the body */
+#userForm{
+  background-color: #E65100;
+  color: white;
+  margin: 10% auto !important;
+  width: 630px; !important;
+  border: 2px solid #FFEB3B;
+  padding: 3px;
+}
+
+input[type="number"]{
+  margin-right:10px !important;
+  margin-top: 14px !important;
+  float: right;
+}
+
+textarea, input {
+  color: red !important;
+  margin: 10px;
+  font-size: 25px;
+}
+label{
+  font-family: 'Courgette', cursive;
+  margin: 10px;
+  font-size: 25px;
+}
+
+#label{
+  font-family: 'Courgette', cursive;
+  margin: 8px;
+  font-size: 45px;
+  color: #E8EAF6;
+  text-align: center;
+}
+#play, #sub{
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 45%;
+  margin-bottom: 10px;
+}
+
+#countDown #timer{
+  color: #B71C1C;
+  font-size: 70px;
+  padding: 20px;
+}
+
+#send_off, #select{
+  font-size: 60px;
+  text-align: center;
+  margin: 2% auto !important;
+  color: #B71C1C;
+  font-family: 'Courgette', cursive;
+}
+
+#thanks{
+  margin-bottom: 10px;
+}
+.tiles{
+  border: 2px solid #FFEB3B;
+  height:200px; width:200px; margin:15px;
+}
